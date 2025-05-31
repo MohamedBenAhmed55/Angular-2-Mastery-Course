@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output, signal} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -9,10 +9,13 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './new-task.component.css'
 })
 export class NewTaskComponent {
+onSubmit() {
+throw new Error('Method not implemented.');
+}
   @Output() cancel = new EventEmitter<void>()
-  enteredTitle = signal("");
-  enteredSummary = signal("");
-  enteredDate= signal("");
+  enteredTitle = "";
+  enteredSummary = "";
+  enteredDate= "";
 
 
   onCancel(){
