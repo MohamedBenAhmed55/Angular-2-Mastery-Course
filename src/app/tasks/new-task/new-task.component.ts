@@ -24,7 +24,6 @@ export class NewTaskComponent {
     this.cancel.emit()
   }
   onSubmit() {
-    console.log("I am emitted", this.enteredTitle, this.enteredSummary, this.enteredDate);
     this.add.emit({
       title: this.enteredTitle,
       summary: this.enteredSummary,
